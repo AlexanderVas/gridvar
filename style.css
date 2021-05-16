@@ -27,7 +27,7 @@ body {
     max-height: 100vh;
     height: 100vh;
     display: grid;
-    grid-template: 150px 1fr/1fr 1fr;
+    grid-template: 90px 1fr/1fr 1fr;
     grid-template-areas: "header header"
     "img texts";
 }
@@ -38,6 +38,7 @@ body {
     right: 0;
     margin-right: 500px;
     bottom: 0;
+    z-index: 1;
 }
 
 
@@ -99,7 +100,7 @@ header ul a:last-child {
     background-color: black;
 }
 
-.startscreen img{
+.startscreen #logomain{
     transform: scale(0.95);
     place-self: center;
     grid-area: img;
@@ -115,7 +116,7 @@ header ul a:last-child {
     width: 100%;
     justify-self: end;
     margin-right: 150px;
-    max-height: calc(100vh - 150px);
+    max-height: calc(100vh - 90px);
 }
 
 .texts h1 {
@@ -202,7 +203,7 @@ header ul a:last-child {
 
 .container2 {
     width: 80%;
-    min-height: 85vh;
+    min-height: calc(100vh - 50px - 100px);
     display: flex;
     flex-direction: column;
     justify-content: space-around;

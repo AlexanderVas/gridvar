@@ -29,6 +29,18 @@
 
 @media all and (max-width: 1000px) {
 
+    #l1{
+        display:none;
+    }
+
+    #l2{
+        display:none;
+    }
+
+    #l3{
+        display: none;
+    }
+
     .startscreen{
         grid-template: 150px 1fr/1fr;
         grid-template-areas: "header"
