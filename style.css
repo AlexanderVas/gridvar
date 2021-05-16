@@ -9,6 +9,7 @@
     font-family: 'Jost', sans-serif;
     text-decoration: none;
     color: black;
+    scroll-behavior: smooth;
 }
 
 :visited,
@@ -29,6 +30,23 @@ body {
     grid-template: 150px 1fr/1fr 1fr;
     grid-template-areas: "header header"
     "img texts";
+}
+
+#l1 {
+    position: absolute;
+    width: 600px;
+    right: 0;
+    margin-right: 500px;
+    bottom: 0;
+}
+
+
+#l2 {
+    position: absolute;
+    width: 200px;
+    transform: rotate(90deg);
+    bottom: 30%;
+    left: 10%;
 }
 
 header {
@@ -89,6 +107,7 @@ header ul a:last-child {
 
 .texts {
     display: grid;
+    grid-gap: 0px;
     grid-template: 2fr 2fr 1fr/1fr; 
     grid-template-areas: 'h1'
                         'p'
@@ -147,17 +166,27 @@ header ul a:last-child {
 }
 
 .sectiongoods{
+    position: relative;
     display: grid;
     grid-template-rows: 50px 1fr 100px;
+    grid-gap: 0px;
     min-height: 100vh;
     background-color: white;
 }
 
+#l3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 350px;
+    height: 100vh;
+}
+
 .dkp {
-    height: 5vh;
+    height: 50px;
     width: 100%;
     max-width: 100vw;
-    max-height: 5vh;
+    max-height: 50px;
     background-color: #f3f3f3;
     overflow: hidden;
 }
@@ -197,7 +226,7 @@ header ul a:last-child {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    max-width: 73vw;
+    max-width: 100%;
     min-height: 600px;
     margin: 0px 0px 50px 0px;
 }
@@ -259,8 +288,8 @@ header ul a:last-child {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 10vh;
-    max-height: 10vh;
+    height: 100px;
+    max-height: 100px;
     background-color: #f3f3f3;
 }
 
