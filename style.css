@@ -26,10 +26,13 @@ body {
     max-height: 100vh;
     height: 100vh;
     display: grid;
-    grid-template-rows: 150px 1fr;
+    grid-template: 150px 1fr/1fr 1fr;
+    grid-template-areas: "header header"
+    "img texts";
 }
 
 header {
+    grid-area: header;
     display: grid;
     margin: 50px 150px 0px 0px;
     height: 40px;
@@ -78,13 +81,19 @@ header ul a:last-child {
     background-color: black;
 }
 
+.startscreen img{
+    transform: scale(0.95);
+    place-self: center;
+    grid-area: img;
+}
+
 .texts {
     display: grid;
-    grid-template: 2fr 2fr 1fr/1fr 1fr; 
-    grid-template-areas: '. h1'
-                        '. p'
-                        '. a' ;
-    width: 80vw;
+    grid-template: 2fr 2fr 1fr/1fr; 
+    grid-template-areas: 'h1'
+                        'p'
+                        'a' ;
+    width: 100%;
     justify-self: end;
     margin-right: 150px;
     max-height: calc(100vh - 150px);
@@ -110,11 +119,11 @@ header ul a:last-child {
     display: grid;
     grid-area: p;
     justify-self: end;
-    font-size: calc(20px + 1vw);
+    font-size: calc(13px + 1vw);
     color: white;
     text-align: right;
     font-weight: 100;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -135,4 +144,127 @@ header ul a:last-child {
 
 .texts a:hover {
     transform: scale(1.2);
+}
+
+.sectiongoods{
+    display: grid;
+    grid-template-rows: 50px 1fr 100px;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.dkp {
+    height: 5vh;
+    width: 100%;
+    max-width: 100vw;
+    max-height: 5vh;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+
+.dkptext {
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: -6px;
+}
+
+.container2 {
+    width: 80%;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.container2 h2 {
+    font-size: 90px;
+    letter-spacing: 20px;
+    font-weight: 200;
+    align-self: center;
+    margin:0;
+    padding:0;
+    z-index: 1;
+}
+
+.goods{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 73vw;
+    min-height: 600px;
+    margin: 0px 0px 50px 0px;
+}
+
+.gooda p{
+    font-size: 20px;
+    text-align: center;
+    color: #9A1212;
+    z-index: 2;
+}
+
+.goods #arrows{
+    height: 50px;
+    width: 50px;
+}
+
+.goods a:first-child{
+    transform: rotate(180deg);
+    margin-bottom: 11px;
+}
+
+.goods a:hover{
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.goods a:first-child:hover{
+    transform: rotate(180deg) scale(1.1);
+}
+.gooda{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 200px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: #c4c4c4;
+    align-items: center;
+    transition: .1s;
+}
+
+.gooda img{
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    margin-left: 40px;
+}
+.goods #arrows{
+    height: 50px;
+    width: 50px;
+}
+
+.goods a:first-child{
+    transform: rotate(180deg);
+    margin-bottom: 11px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    max-height: 10vh;
+    background-color: #f3f3f3;
+}
+
+.footer p{
+    font-size: 26px;
+    margin-left: 50px;
 }

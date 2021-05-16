@@ -1,39 +1,87 @@
-@media all and (max-width: 1200px){
-    header{
+@media all and (max-width: 1200px) {
+    header {
         justify-content: center;
         margin-right: 0;
     }
+
+    .texts {
+        margin: 50px;
+    }
+
+    .container2{
+        justify-self: center;
+    }
+
+    .goods{
+        justify-content: center;
+        align-self: center;
+        margin:0;
+    }
+
+    .goods #arrows{
+        display: none;
+    }
+
+    .gooda{
+        margin-bottom: 70px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+
+    .startscreen{
+        grid-template: 150px 1fr/1fr;
+        grid-template-areas: "header"
+        "texts";
+    }
+
+    .startscreen img{
+        display: none;
+    }
+
     .texts{
         margin: 0;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:"h1"
-        "p"
-        "a";
         justify-self: center;
-        place-items: center;
     }
 
-    .texts h1{
+    .texts h1 {
         text-align: center;
     }
 
-    .texts p{
+    .texts p {
+        font-size: calc(18px + 1vw);
         text-align: center;
         align-items: center;
+        justify-self: center;
     }
 
-    .texts a{
+    .texts a {
         place-self: center;
     }
 }
 
-@media all and (max-width: 500px){
-    .texts h1{
+@media all and (max-width: 600px) {
+    .container2 h2{
+        font-size: 15vw;
+        letter-spacing: 1vw;
+    }
+
+    .footer{
+        justify-content:center;
+    }
+
+    .footer p{
+        margin: 0;
+        font-size: 5vw;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .texts h1 {
         font-size: 12vw;
     }
 
-    .texts h1 span{
+    .texts h1 span {
         font-size: 20vw;
     }
 }
