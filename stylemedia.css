@@ -1,0 +1,39 @@
+@media all and (max-width: 1200px){
+    header{
+        justify-content: center;
+        margin-right: 0;
+    }
+    .texts{
+        margin: 0;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:"h1"
+        "p"
+        "a";
+        justify-self: center;
+        place-items: center;
+    }
+
+    .texts h1{
+        text-align: center;
+    }
+
+    .texts p{
+        text-align: center;
+        align-items: center;
+    }
+
+    .texts a{
+        place-self: center;
+    }
+}
+
+@media all and (max-width: 500px){
+    .texts h1{
+        font-size: 12vw;
+    }
+
+    .texts h1 span{
+        font-size: 20vw;
+    }
+}
