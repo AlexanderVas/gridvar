@@ -1,3 +1,9 @@
+@media all and (max-width: 1500px) {
+
+    #l2{
+        display: none!important;
+    }
+}
 @media all and (max-width: 1200px) {
     header {
         justify-content: center;

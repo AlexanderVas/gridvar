@@ -48,6 +48,7 @@ body {
     transform: rotate(90deg);
     bottom: 30%;
     left: 10%;
+    z-index: 3;
 }
 
 header {
@@ -299,4 +300,5 @@ header ul a:last-child {
 .footer p{
     font-size: 26px;
     margin-left: 50px;
+    z-index: 2;
 }
