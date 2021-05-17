@@ -33,7 +33,11 @@
     header {
         grid-template-columns: 1fr;
         justify-items: center;
-        margin-right: 0;
+    }
+
+    header ul{
+        justify-self: center;
+        margin: 0;
     }
 
     .desc img{

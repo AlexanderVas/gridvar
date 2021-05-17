@@ -4,6 +4,10 @@
         margin-right: 0;
     }
 
+    header ul{
+        margin: 0;
+    }
+
     .texts {
         margin: 50px;
     }
