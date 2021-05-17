@@ -144,7 +144,7 @@ footer {
 }
 
 footer a{
-    width: fit-content;
+    width: 110px;
     transition: .2s;
 }
 
