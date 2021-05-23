@@ -52,7 +52,7 @@
     }
 
     .startscreen{
-        grid-template: 75px 1fr/1fr;
+        grid-template: 90px 1fr/1fr;
         grid-template-areas: "header"
         "texts";
     }
